@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" style="width: 200px; height: auto;">    <HelloWorld msg="Welcome to LiQQ'music"/>
-    <MusicPlayer></MusicPlayer>
+   <PageLayout></PageLayout>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MusicPlayer from './components/MusicPlayer.vue'
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    MusicPlayer
+  import PageLayout from './components/PageLayout.vue';
+  //import MusicPlayer from './components/MusicPlayer.vue'
+
+  export default {
+    name: 'App',
+   components: {
+    PageLayout,
+    //MusicPlayer
   }
 }
 </script>
@@ -25,5 +25,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+}
+
+.custom-element {
+  color: rgb(11, 70, 11); /* 设置文字颜色为墨绿色 */
+   font-size: 10px;
 }
 </style>
